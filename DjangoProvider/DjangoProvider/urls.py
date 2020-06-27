@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from provider.views import htmlResponseView
+from provider.views import JSONResponseView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('html/',htmlResponseView)
+    path('html/',htmlResponseView),
+    path('json/',JSONResponseView),
 ]
