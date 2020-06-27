@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from provider.views import htmlResponseView
 from provider.views import JSONResponseView
+from provider.views import JSONResponseView2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('html/',htmlResponseView),
     path('json/',JSONResponseView),
+    path('json2/',JSONResponseView2),
 ]
